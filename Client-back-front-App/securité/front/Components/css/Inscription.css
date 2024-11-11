@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-height: 300px; /* Réduire la taille maximale */
+    margin-top: 100px; /* Réduire la marge supérieure */
+    width: 600px;
+    background: #21222271;
+    padding: 20px; /* Réduire le padding global */
+    box-sizing: border-box; /* Inclure le padding dans la hauteur totale */
+    overflow-y: auto; /* Ajouter une barre de défilement si le contenu dépasse */
+    margin-top : 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 10px;
+}
+.text{
+    color: #3c009d;
+    font-size: 48px;
+    font-weight: 700;
+}
+.underline{
+    width: 61px;
+    height: 6px;
+    background: #3c009d;
+    border-radius: 9px;
+}
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+.input img{
+    margin: 0px 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+.forgot-password{
+    padding-left : 62px;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 18px;
+}
+
+.forgot-password span{
+    color: #4c00b4;
+    cursor: pointer;
+}
+.submit-container{
+    gap: 30px;
+    margin: 69px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 2px;
+}
+.action-buttons{
+    display: flex;
+    gap: 30px;
+    margin: 69px auto;
+    margin-bottom: -20px;
+
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.gray{
+    background: #EAEAEA;
+    color: #676767;
+}

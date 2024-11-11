@@ -1,0 +1,37 @@
+https://www.tensorflow.org/tfx/serving/tutorials/Serving_REST_simple
+
+https://www.learn.microsoft.com/en-us/windows/wsl/install-manual
+
+https://www.tensorflow.org/guide/saved_model
+
+https://learn.microsoft.com/en-us/windows/wsl/install-manual
+
+http://localhost:8605/v1/models/email_model:predict
+
+
+creer une image avec docker : 
+
+docker run -it -v C:\Users\LENOVO\Desktop\Memoire M2\api:/api -p 8605:8605 --entrypoint /bin/bash tensorflow/serving
+
+ docker run -t --rm -p 8502:8502 -v C:/Users/LENOVO/Desktop/"Memoire M2"/api:/api  tensorflow/serving --rest_api_port=8502 --model_config_file=/api/training/models.config.c
+
+//commande pour arreter le port s'il n'est pas disponible :
+netstat -ano | findstr :8502
+taskkill /PID numero_pid /F
+exemple : taskkill /PID 15120 /F
+
+//les commandes pour allumer les serveurs : 
+
+//1: taper cette commande en mode admin en utilisant anacondant en mode cmd:
+(base) C:\Users\LENOVO\Desktop\"Memoire M2"\api>uvicorn main:app --reload
+
+// taper cette commande sur powershell :
+// il faut lancer docker desktop avant de lancer cette commande:
+docker run -t --rm -p 8503:8503 -v C:/Users/LENOVO/Desktop/"Memoire M2"/api:/api  tensorflow/serving --rest_api_port=8503 --model_config_file=/api/training/models.config.c --model_config_file_poll_wait_seconds=60
+
+swagger ??? integration avec fastApi 
+
+86: aigle pecheur
+5: balbuzard
+28: Avocette
+

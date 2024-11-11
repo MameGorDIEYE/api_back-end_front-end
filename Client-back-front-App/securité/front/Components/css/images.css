@@ -1,0 +1,69 @@
+/* app.css */
+.container {
+    min-height: 500vh;
+    position: relative;
+    padding-bottom: 60px; /* Space for the footer */
+    box-sizing: border-box;
+  }
+  
+  .title {
+    text-align: center; /* Center the text horizontally */
+    font-size: 100px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Space between the title and the images */
+  }
+  
+  .fixed-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Equal spacing between images */
+    margin-bottom: 20px;
+  }
+  
+  .fixed-images img {
+    width: 30%;
+    height: auto;
+    max-height: 600px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
+  .slider-container {
+    width: 1000px;
+    margin:  auto; /* auto pour centrer horizontalement */
+    justify-content: center; /* Centrer horizontalement */
+  }
+  
+  .slider-container img {
+    width: 1000px;
+    height: 700px;
+    max-height: 700px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .def {
+    font-weight: bold; /* Texte en gras */
+    font-style: italic; /* Texte en italique */
+    font-family: 'Arial', sans-serif; /* Police stylée (remplacez par la police de votre choix) */
+    color: black; /* Couleur du texte en blanc */
+    text-align: center; /* Centrer le texte */
+    font-size: 30px; /* Augmenter la taille de la police */
+    line-height: 1.6; /* Espacement des lignes */
+  }
+  
+  /* images.css */
+.image-container {
+  position: relative;
+}
+
+.image-container .image-text {
+  position: absolute;
+  bottom: 10px; /* Ajustez la position verticale du texte par rapport à l'image */
+  left: 10px; /* Ajustez la position horizontale du texte par rapport à l'image */
+  color: white; /* Couleur du texte */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  padding: 5px 10px; /* Espacement interne du texte */
+  font-size: 18px; /* Taille de la police */
+}
+
+  
